@@ -31,6 +31,21 @@
     top: 45%;
     left: 21%;
   }
+  /*OFRECEMOS*/
+  .ofrecemosFrase {
+    padding-top: 5rem;
+  }
+
+  .circulo-rojo {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    left: 28rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   /*home*/
@@ -56,6 +71,31 @@
   .descripcionServicio {
     line-height: 2.5rem;
   }
+  .circulo-rojo-2 {
+    position: absolute;
+    width: 11.25rem;
+    height: 11.25rem;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -2;
+    left: 8rem;
+    top: 18.75rem;
+  }
+
+  .circulo-rojo {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    left: 25rem;
+  }
+  .fraseFinal {
+    padding-top: 23rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -76,5 +116,36 @@
     top: 50%;
     left: 24%;
     font-size: 1.8rem;
+  }
+  /*OFRECEMOS*/
+  .descripcionServicio {
+    font-size: 1.25rem;
+  }
+  .circulo-rojo-2 {
+    position: absolute;
+    width: 11.25rem;
+    height: 11.25rem;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -2;
+    left: 8rem;
+    top: 18.75rem;
+  }
+
+  .circulo-rojo {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    left: 28rem;
+    top: 25rem;
+  }
+  .fraseFinal {
+    padding-top: 29rem;
+    font-size: 1.875rem;
   }
 }

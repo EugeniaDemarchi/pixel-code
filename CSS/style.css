@@ -17,6 +17,14 @@ html {
   background-color: #000 !important;
 }
 
+.nav-link {
+  text-decoration: none;
+}
+.nav-link.active {
+  font-weight: bold; /* Estilo en negrita */
+  color: rgb(255, 36, 102) !important; /* Color personalizado */
+}
+
 /*HAMBURGER-NAV*/
 .navbar-toggler {
   border: none;
@@ -142,6 +150,18 @@ html {
 }
 
 /*OFRECEMOS*/
+.contenedorRelativo {
+  position: relative;
+}
+.ofrecemosFrase {
+  padding-top: 4rem;
+  z-index: 1;
+}
 .descripcionServicio {
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.fraseFinal {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 5px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.5); /* Tono rojizo */
 }

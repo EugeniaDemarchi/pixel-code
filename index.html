@@ -38,9 +38,7 @@
             language="english"
             >EN</a
           >
-          <a class="active nav-link text-white" href="#" language="spanish"
-            >ESP</a
-          >
+          <a class="nav-link text-white" href="#" language="spanish">ESP</a>
         </div>
 
         <button
@@ -57,9 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ofrecemos">Qué ofrecemos</a>
@@ -90,12 +86,8 @@
       <div class="container-lg p-3">
         <div class="row justify-content-center align-items-center">
           <div class="row justify-content-center">
-            <div class="col-lg-6 col-12 mb-4">
-              <h2
-                class="ofrecemosFrase display-6 text-white pt-sm-0 pt-md-5 pt-lg-5"
-              >
-                QUÉ OFRECEMOS
-              </h2>
+            <div class="contenedorRelativo col-lg-6 col-12 mb-4">
+              <h2 class="ofrecemosFrase display-6 text-white">QUÉ OFRECEMOS</h2>
               <p class="descripcionServicio my-4 pr-5 text-white">
                 Somos dos emprendedoras apasionadas por el diseño y el
                 desarrollo web. Combinamos nuestras habilidades en front y
@@ -103,7 +95,9 @@
                 funcionales. Nos mantenemos en constante formación para ofrecer
                 sitios web modernos y plataformas eficientes.
               </p>
-              <p class="text-center text-md-start lead text-white">
+              <div class="circulo-rojo"></div>
+              <div class="circulo-rojo-2"></div>
+              <p class="fraseFinal text-center text-md-start lead text-white">
                 Tu proyecto, nuestra inspiración.
               </p>
             </div>
@@ -129,5 +123,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((item) => item.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
