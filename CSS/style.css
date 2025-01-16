@@ -165,3 +165,63 @@ html {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
     0 0 5px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.5); /* Tono rojizo */
 }
+
+/* sobre nosotras */
+.sobre_nosotras {
+  text-align: center;
+  position: relative;
+}
+
+.sobre_nosotras h2 {
+  position: relative;
+  display: inline-block; 
+}
+
+.sobre_nosotras h2 .circulo {
+  position: absolute;
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: -2; 
+  top: 80%; 
+  left: 3%; 
+  transform: translate(-50%, -50%);
+}
+.sobre_nosotras h2::first-letter {
+  position: relative;
+  z-index: 2; 
+}
+.sobre_nosotras_perfiles{
+  display: flex;
+  flex-direction: row;
+}
+.foto_perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  margin-top: 3rem;
+}
+.foto_perfil img{
+  width: 20rem;
+  height: 20rem;
+}
+.quien_soy{
+  color: white;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 2rem 10rem;
+}
+.foto_perfil a{
+  text-decoration: none;
+  font-weight: bolder;
+  background-color:rgb(255, 36, 102);
+  opacity: 0.8;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow:0 0 20px 0 rgba(255,255,255,.55)
+}
