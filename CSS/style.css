@@ -170,6 +170,7 @@ html {
 .sobre_nosotras {
   text-align: center;
   position: relative;
+  padding-top: 3rem;
 }
 
 .sobre_nosotras h2 {
@@ -202,8 +203,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
-  margin-top: 3rem;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 .foto_perfil img{
   width: 20rem;
@@ -213,7 +214,6 @@ html {
   color: white;
   text-align: center;
   font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 2rem 10rem;
 }
 .foto_perfil a{
   text-decoration: none;
@@ -224,4 +224,59 @@ html {
   padding: 1rem 2.5rem;
   border-radius: 0.5rem;
   box-shadow:0 0 20px 0 rgba(255,255,255,.55)
+}
+.contacto {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 15rem 5rem; 
+  gap: 5rem; 
+  padding-top: 3rem;
+}
+
+.imagen_contacto img {
+  width: 100%; 
+}
+
+.info_contacto {
+  text-align: left; 
+  position: relative;
+  
+}
+
+.info_contacto h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem; 
+}
+
+.info_contacto h2 .circulo_contacto {
+  position: absolute;
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: -1; 
+  top: 77%; 
+  left: 6%; 
+  transform: translate(-50%, -50%);
+}
+
+.contacto_items {
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 2rem;
+  margin: 3rem 2rem; 
+  border-radius: 0.3rem; 
+  width: 50rem;
+}
+footer{
+  color: white;
+  text-align: center;
 }
