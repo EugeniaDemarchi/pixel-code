@@ -13,6 +13,27 @@ html {
 }
 
 /*NAVBAR*/
+.circulo-logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgb(255, 36, 102);
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pyc {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.navbar-brand {
+  justify-content: center;
+  align-items: center;
+}
 .navbar {
   background-color: #000 !important;
 }
