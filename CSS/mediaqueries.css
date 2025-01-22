@@ -1,20 +1,46 @@
 /*mediaqueries*/
 @media screen and (min-width: 375px) {
-  /*home*/
+  /*HOME*/
   .hero::after {
     top: 40%;
     left: 75%;
   }
+  /*OFRECEMOS*/
+  .descripcionServicio {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .img-ppal {
+    display: none;
+  }
+  .img-alternativa {
+    display: block;
+  }
+  /*SERVICIOS*/
+  .serviciosFrase {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+  }
+  .contenedorServicios {
+    margin-bottom: 1.3rem;
+  }
 }
 @media screen and (min-width: 425px) {
-  /*home*/
+  /*HOME*/
   .hero::after {
     top: 40%;
     left: 70%;
   }
+  /*OFRECEMOS*/
+  .img-ppal {
+    display: none;
+  }
+  .img-alternativa {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
-  /*home*/
+  /*HOME*/
   .hero::after {
     top: 40%;
     left: 73%;
@@ -35,7 +61,12 @@
   .ofrecemosFrase {
     padding-top: 5rem;
   }
-
+  .img-ppal {
+    display: none;
+  }
+  .img-alternativa {
+    display: block;
+  }
   .circulo-rojo {
     position: absolute;
     width: 280px;
@@ -46,14 +77,39 @@
     z-index: -1;
     left: 28rem;
   }
+  /*SERVICIOS*/
+  #servicios {
+    margin-top: 4rem;
+  }
+  .serviciosFrase {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  .contenedorServicios {
+    margin-bottom: 1.5rem;
+  }
+  .contenedorRelativo2 {
+    position: relative;
+  }
+  .circulo-rojo-3 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -1;
+    left: 32rem;
+    top: 158rem;
+  }
 }
 @media screen and (min-width: 1024px) {
-  /*home*/
+  /*HOME*/
   .hero::after {
     top: 40%;
     left: 78%;
     transform: translate(-50%, -50%);
-    width: 210px; /* Tamaño del círculo */
+    width: 210px;
     height: 210px;
   }
   .title {
@@ -82,7 +138,6 @@
     left: 8rem;
     top: 18.75rem;
   }
-
   .circulo-rojo {
     position: absolute;
     width: 280px;
@@ -96,15 +151,34 @@
   .fraseFinal {
     padding-top: 23rem;
   }
+  .img-ppal {
+    display: block;
+  }
+  .img-alternativa {
+    display: none;
+  }
+  /*SERVICIOS*/
+  #servicios {
+    margin-top: 0;
+  }
+  .descripcionCadaServicio {
+    font-size: 1rem;
+  }
+  .circulo-rojo-3 {
+    width: 280px;
+    height: 280px;
+    left: 42rem;
+    top: 145rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  /*home*/
+  /*HOME*/
   .hero::after {
     top: 40%;
     left: 69%;
     transform: translate(-50%, -50%);
-    width: 400px; /* Tamaño del círculo */
+    width: 400px;
     height: 400px;
   }
   .title {
@@ -118,6 +192,9 @@
     font-size: 1.8rem;
   }
   /*OFRECEMOS*/
+  #ofrecemos {
+    margin-top: 4rem;
+  }
   .descripcionServicio {
     font-size: 1.25rem;
   }
@@ -147,5 +224,18 @@
   .fraseFinal {
     padding-top: 29rem;
     font-size: 1.875rem;
+  }
+  /*SERVICIOS*/
+  #servicios {
+    margin-top: 2rem;
+  }
+  .serviciosFrase {
+    margin-bottom: 6rem;
+  }
+  .circulo-rojo-3 {
+    width: 280px;
+    height: 280px;
+    left: 72rem;
+    top: 165rem;
   }
 }
