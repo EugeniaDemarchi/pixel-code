@@ -172,12 +172,10 @@ html {
   position: relative;
   padding-top: 3rem;
 }
-
 .sobre_nosotras h2 {
   position: relative;
   display: inline-block; 
 }
-
 .sobre_nosotras h2 .circulo {
   position: absolute;
   background-color: rgb(255, 36, 102);
@@ -225,6 +223,8 @@ html {
   border-radius: 0.5rem;
   box-shadow:0 0 20px 0 rgba(255,255,255,.55)
 }
+
+/* contacto */
 .contacto {
   display: flex;
   flex-direction: row; 
@@ -235,24 +235,19 @@ html {
   margin: 10rem 2rem; 
   scroll-margin-top: 10rem;
 }
-
-
 .imagen_contacto img {
   width: 100%; 
 }
-
 .info_contacto {
   text-align: left; 
   position: relative;
   
 }
-
 .info_contacto h2 {
   position: relative;
   display: inline-block;
   font-size: 2.5rem; 
 }
-
 .info_contacto h2 .circulo_contacto {
   position: absolute;
   background-color: rgb(255, 36, 102);
@@ -265,7 +260,6 @@ html {
   left: 6%; 
   transform: translate(-50%, -50%);
 }
-
 .contacto_items {
   background-color: rgb(255, 36, 102);
   opacity: 0.8;
@@ -278,7 +272,6 @@ html {
   border-radius: 0.3rem; 
   width: 50rem;
 }
-
 button[type="submit"] {
   display: block;
   padding: 6px 30px;
@@ -290,6 +283,8 @@ button[type="submit"]:hover {
   background-color: #34e4db;
   color: #000; 
 }
+
+/* footer */
 footer{
   color: white;
   text-align: center;
