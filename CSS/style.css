@@ -1,3 +1,5 @@
+/*circulo home  rgb(255, 36, 102) */
+
 /*MOBILE-FIRST*/
 * {
   margin: 0;
@@ -88,12 +90,16 @@ html {
 }
 
 /*SECTIONS*/
+#home {
+  padding-top: 96px;
+  margin-top: -96px;
+}
 #home,
 #ofrecemos,
 #servicios,
 #sobre,
 #contacto {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /*HOME*/
@@ -116,6 +122,8 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75); /* Negro con 50% de opacidad */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 1;
 }
 
@@ -189,8 +197,18 @@ html {
 }
 
 .fraseFinal {
+  animation: blink 5s infinite;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
     0 0 5px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.5); /* Tono rojizo */
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 /*SERVICIOS*/
 

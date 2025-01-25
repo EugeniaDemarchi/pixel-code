@@ -1,4 +1,10 @@
 /*mediaqueries*/
+@media (min-width: 320px) {
+  .ofrecemosFrase {
+    padding-top: 5rem;
+  }
+}
+
 @media screen and (min-width: 375px) {
   /*HOME*/
   .hero::after {
@@ -6,6 +12,9 @@
     left: 75%;
   }
   /*OFRECEMOS*/
+  .ofrecemosFrase {
+    padding-top: 6rem;
+  }
   .descripcionServicio {
     line-height: 2rem;
     font-size: 1rem;
@@ -22,7 +31,7 @@
 }
 /*SERVICIOS*/
 .serviciosFrase {
-  padding-top: 4rem;
+  padding-top: 5rem;
   font-size: 1.5rem;
 }
 .contenedorServicios {
@@ -131,6 +140,9 @@
   }
 
   /*OFRECEMOS*/
+  #ofrecemos {
+    margin-top: 3rem;
+  }
   .descripcionServicio {
     line-height: 2.5rem;
   }
@@ -156,7 +168,7 @@
     left: 25rem;
   }
   .fraseFinal {
-    padding-top: 23rem;
+    padding-top: 13rem;
   }
   .img-ppal {
     display: block;
@@ -229,20 +241,23 @@
     top: 25rem;
   }
   .fraseFinal {
-    padding-top: 29rem;
+    padding-top: 25rem;
     font-size: 1.875rem;
   }
+
   /*SERVICIOS*/
   #servicios {
-    margin-top: 2rem;
+    height: 90vh;
   }
   .serviciosFrase {
+    padding-top: 0;
+    margin-top: 0;
     margin-bottom: 6rem;
   }
   .circulo-rojo-3 {
     width: 280px;
     height: 280px;
     left: 72rem;
-    top: 165rem;
+    top: 155rem;
   }
 }
