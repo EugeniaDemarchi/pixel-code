@@ -7,6 +7,9 @@
 
 @media screen and (min-width: 375px) {
   /*HOME*/
+/* PC grandes (1440px en adelante) */
+@media screen and (min-width: 1440px) {
+  
   .hero::after {
     top: 40%;
     left: 75%;
@@ -57,22 +60,34 @@
   .hero::after {
     top: 40%;
     left: 73%;
+    left: 69%;
     transform: translate(-50%, -50%);
-    width: 130px; /* Tamaño del círculo */
-    height: 130px;
+    width: 400px; 
+    height: 400px;
   }
   .title {
     top: 40%;
     left: 50%;
-    font-size: 4rem;
+    font-size: 10rem;
   }
   .subtitle {
-    top: 45%;
-    left: 21%;
+    top: 50%;
+    left: 24%;
+    font-size: 1.8rem;
   }
-  /*OFRECEMOS*/
-  .ofrecemosFrase {
-    padding-top: 5rem;
+  .descripcionServicio {
+    font-size: 1.25rem;
+  }
+  .circulo-rojo-2 {
+    position: absolute;
+    width: 11.25rem;
+    height: 11.25rem;
+    background-color: rgb(255, 36, 102);
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: -2;
+    left: 8rem;
+    top: 18.75rem;
   }
   .img-ppal {
     display: none;
@@ -82,8 +97,8 @@
   }
   .circulo-rojo {
     position: absolute;
-    width: 280px;
-    height: 280px;
+    width: 480px;
+    height: 480px;
     background-color: rgb(255, 36, 102);
     border-radius: 50%;
     opacity: 0.4;
@@ -121,11 +136,52 @@
 }
 @media screen and (min-width: 1024px) {
   /*HOME*/
+    top: 25rem;
+  }
+  .fraseFinal {
+    padding-top: 29rem;
+    font-size: 1.875rem;
+  }
+  .sobre_nosotras h2 .circulo {
+    width: 4rem;
+    height: 4rem;
+    top: 80%; 
+    left: 3%; 
+  }
+  .foto_perfil img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .quien_soy {
+    padding: 2rem 10rem;
+    font-size: 1.5rem;
+  }
+  .foto_perfil a {
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+  }
+  .contacto {
+    margin: 10rem 5rem;
+    gap: 6rem;
+  }
+  .info_contacto h2 {
+    font-size: 3rem;
+  }
+  .contacto_items {
+    font-size: 1.4rem;
+    width: 60rem;
+  }
+}
+
+/* PC y notebooks (1024px a 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+ 
   .hero::after {
     top: 40%;
     left: 78%;
     transform: translate(-50%, -50%);
     width: 210px;
+    width: 210px; 
     height: 210px;
   }
   .title {
@@ -188,22 +244,63 @@
     height: 280px;
     left: 42rem;
     top: 145rem;
+    padding-top: 5rem;
+  }
+  .sobre_nosotras_perfiles {
+    flex-direction: column;
+  }
+  .sobre_nosotras h2 .circulo {
+    width: 5rem;
+    height: 5rem;
+    top: 75%; 
+    left: 4%; 
+  }
+  .foto_perfil img {
+    width: 28rem;
+    height: 28rem;
+  }
+  .quien_soy {
+    padding: 2rem 12rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   /*HOME*/
+  .foto_perfil a {
+    font-size: 1rem;
+    padding: 1.2rem 2.5rem;
+  }
+  .contacto {
+    flex-direction: column;
+    margin: 30rem 3rem;
+    gap: 4rem;
+  }
+  .info_contacto h2 {
+    font-size: 3rem;
+  }
+  .contacto_items {
+    font-size: 1.5rem;
+    width: 58rem;
+  }
+}
+
+/* Tablets (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
   .hero::after {
     top: 40%;
-    left: 69%;
+    left: 73%;
     transform: translate(-50%, -50%);
     width: 400px;
     height: 400px;
+    width: 130px; 
+    height: 130px;
   }
   .title {
     top: 40%;
     left: 50%;
-    font-size: 10rem;
+    font-size: 4rem;
   }
   .subtitle {
     top: 50%;
@@ -227,22 +324,181 @@
     z-index: -2;
     left: 8rem;
     top: 18.75rem;
+    top: 45%;
+    left: 21%;
   }
-
+  .ofrecemosFrase {
+    padding-top: 5rem;
+  }
   .circulo-rojo {
     position: absolute;
-    width: 480px;
-    height: 480px;
+    width: 280px;
+    height: 280px;
     background-color: rgb(255, 36, 102);
     border-radius: 50%;
     opacity: 0.4;
     z-index: -1;
     left: 28rem;
-    top: 25rem;
+  }
+  .sobre_nosotras_perfiles {
+    flex-direction: column;
+  }
+  .foto_perfil img {
+    width: 18rem;
+    height: 18rem;
+  }
+  .quien_soy {
+    padding: 1.5rem 8rem;
+    font-size: 1.2rem;
+  }
+  .foto_perfil a {
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+  }
+  .sobre_nosotras h2 .circulo {
+    width: 4.5rem;
+    height: 4.5rem;
+    top: 80%; 
+    left: 3%; 
   }
   .fraseFinal {
     padding-top: 25rem;
     font-size: 1.875rem;
+  .contacto {
+    flex-direction: column;
+    margin: 45rem 3rem;
+    gap: 3rem;
+  }
+  .info_contacto h2 {
+    font-size: 2rem;
+  }
+  .contacto_items {
+    font-size: 1.2rem;
+    width: 40rem;
+  }
+  .contacto h2 .circulo_contacto{
+    top: 80%; 
+    left: 5%;
+  }
+}
+
+/* Celulares grandes (375px a 767px) */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  
+  .hero::after {
+    top: 40%;
+    left: 75%;
+  }
+  #ofrecemos h2{
+    font-size: 1.5rem;
+  }
+  .sobre_nosotras_perfiles {
+    flex-direction: column;
+  }
+  .foto_perfil img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .quien_soy {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+  }
+  .foto_perfil a {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.8rem;
+  }
+  .sobre_nosotras h2{
+    font-size: 1.5rem;
+  }
+  .sobre_nosotras h2 .circulo {
+    width: 3rem;
+    height: 3rem;
+    top: 85%; 
+    left: 2%; 
+  }
+  .contacto {
+    flex-direction: column;
+    justify-content: end;
+    margin: 60rem 1rem 0 1rem;
+    gap: 2rem;
+  }
+  .info_contacto h2 {
+    font-size: 1.5rem;
+  }
+  .info_contacto h2 .circulo_contacto{
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 85%; 
+    left: 5%;
+  }
+  .contacto_items {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+
+/* Celulares chicos (menos de 375px) */
+@media screen and (max-width: 374px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .descripcionServicio {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+  }
+  .circulo-rojo {
+    width: 150px;
+    height: 150px;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sobre_nosotras_perfiles {
+    flex-direction: column;
+  }
+  .foto_perfil img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .quien_soy {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+  .foto_perfil a {
+    font-size: 0.7rem;
+    padding: 0.6rem 1.5rem;
+  }
+  .sobre_nosotras h2 {
+    font-size: 1.5rem;
+  }
+  .sobre_nosotras h2 .circulo {
+    width: 2rem;
+    height: 2rem;
+    top: 85%; 
+    left: 2%; 
+  }
+  .contacto {
+    flex-direction: column;
+    margin: 40rem 1rem 0 1rem;
+    gap: 1.5rem;
+  }
+  .info_contacto h2 {
+    font-size: 1.5rem;
+  }
+  .contacto_items {
+    font-size: 1rem;
+    width: 85%;
+  }
+  .contacto h2 .circulo_contacto {
+    width: 3rem;
+    height: 3rem;
+    top: 85%; 
+    left: 5%; 
   }
 
   /*SERVICIOS*/

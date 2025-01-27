@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/mediaqueries.css" />
+    <link rel="stylesheet" href="./script.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("cWi6Kq7nOLl7CycCL");
+    </script>
   </head>
   <body>
     <header class="navbar navbar-expand-lg bg-body-tertiary py-3 sticky-top">
@@ -121,6 +129,96 @@
         </div>
       </div>
     </section>
+    <section id="servicios"></section>
+    <!-- sobre nosotras -->
+    <section id="sobre">
+      <div class="sobre_nosotras_general">
+        <div class="sobre_nosotras">
+          <h2 class="ofrecemosFrase display-6 text-white">
+            <span class="circulo"></span>CONOCÉ NUESTRO EQUIPO
+          </h2>
+        </div>
+        <div class="sobre_nosotras_perfiles">
+          <div class="foto_perfil">
+            <img src="./imagenes/sobre/fotoEugenia-modified.png" alt="" />
+            <p class="quien_soy">
+              Artista visual y desarrolladora de software con pasión por la
+              estética y el diseño funcional. Hace un año y medio inicié mi
+              camino en la programación y desde entonces sigo creciendo y
+              creando proyectos freelance. Me definen la atención al detalle, el
+              compromiso y la búsqueda constante de la excelencia y el
+              desarrollo personal.
+            </p>
+            <a
+              href="https://portfolio-demarchi.netlify.app/#"
+              target="_blank"
+              rel="noopener"
+              >Portfolio</a
+            >
+          </div>
+          <div class="foto_perfil">
+            <img src="./imagenes/sobre/fotoSandra-modified.png" alt="" />
+            <p class="quien_soy">
+              Desarrolladora de software apasionada por crear soluciones
+              funcionales y efectivas. Desde que inicié en la programación hace
+              dos años, he avanzado continuamente. Me definen la dedicación y el
+              enfoque en alcanzar metas. Me sigo formando para ofrecer lo mejor
+              en cada proyecto y superar las expectativas de mis clientes.
+            </p>
+            <a
+              href="https://sandramsosa.github.io/Portafolio/"
+              target="_blank"
+              rel="noopener"
+              >Portfolio</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contactanos -->
+    <section id="contacto">
+      <div class="contacto">
+        <div class="imagen_contacto">
+          <img src="./imagenes/contacto/imagen.webp" alt="Imagen de contacto" />
+        </div>
+        <div class="info_contacto">
+          <h2 class="ofrecemosFrase display-6 text-white">
+            <span class="circulo_contacto"></span>CONTACTO
+          </h2>
+          <form class="contacto_items" id="form">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="nombre@gmail.com"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Escribinos</label>
+              <textarea
+                class="form-control"
+                type="text"
+                rows="3"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark mb-3" id="button">
+                Email
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      &#169;Copyright. Creado por PIXEL&CODE. Todos los derechos reservados.
+    </footer>
+
     <section id="servicios">
       <div class="container-lg p-3">
         <div class="row justify-content-center">

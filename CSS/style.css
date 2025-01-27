@@ -201,37 +201,126 @@ html {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
     0 0 5px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.5); /* Tono rojizo */
 }
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-/*SERVICIOS*/
 
-.serviciosFrase {
-  padding-top: 3.2rem;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+/* sobre nosotras */
+.sobre_nosotras {
+  text-align: center;
+  position: relative;
+  padding-top: 3rem;
 }
-.cuadrado {
-  width: 3.125rem;
-  height: 3.125rem;
+.sobre_nosotras h2 {
+  position: relative;
+  display: inline-block;
+}
+.sobre_nosotras h2 .circulo {
+  position: absolute;
   background-color: rgb(255, 36, 102);
-  flex-shrink: 0;
-  color: white;
-  font-weight: bold;
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: -2;
+  top: 80%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+.sobre_nosotras h2::first-letter {
+  position: relative;
+  z-index: 2;
+}
+.sobre_nosotras_perfiles {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+}
+.foto_perfil {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 1rem;
 }
-.tituloSvcio {
-  margin-bottom: 1rem;
+.foto_perfil img {
+  width: 20rem;
+  height: 20rem;
 }
-.descripcionCadaServicio {
-  line-height: 1.4;
-  font-size: 0.875rem;
+.quien_soy {
+  color: white;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.foto_perfil a {
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+}
+
+/* contacto */
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 3rem;
+  margin: 10rem 2rem;
+  scroll-margin-top: 10rem;
+}
+.imagen_contacto img {
+  width: 100%;
+}
+.info_contacto {
+  text-align: left;
+  position: relative;
+}
+.info_contacto h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+}
+.info_contacto h2 .circulo_contacto {
+  position: absolute;
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: -1;
+  top: 77%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+.contacto_items {
+  background-color: rgb(255, 36, 102);
+  opacity: 0.8;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 3rem 2rem;
+  border-radius: 0.3rem;
+  width: 50rem;
+}
+button[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #34e4db;
+  color: #000;
+}
+
+/* footer */
+footer {
+  color: white;
+  text-align: center;
 }
