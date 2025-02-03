@@ -49,7 +49,9 @@ html {
 /*btn traduccion*/
 
 .langWrap a:hover {
-  color: black;
+  font-weight: bolder;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 /*HAMBURGER-NAV*/
@@ -236,16 +238,16 @@ html {
   display: inline-block;
   /*font-size: 1.5rem; */
 }
-.sobre_nosotras h2 .circulo {
+.circulo {
   position: absolute;
   background-color: rgb(255, 36, 102);
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   z-index: -2;
-  top: 85%;
-  left: 6%;
+  top: 73%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 .sobre_nosotras h2::first-letter {
@@ -284,6 +286,10 @@ html {
   border-radius: 0.5rem;
   box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.55);
 }
+.foto_perfil a:hover {
+  background-color: rgb(252, 8, 81);
+  transition: all 0.3s ease-in-out;
+}
 /* CONTACTO */
 .contacto {
   display: flex;
@@ -306,16 +312,16 @@ html {
   display: inline-block;
 }
 
-.info_contacto h2 .circulo_contacto {
+.circulo_contacto {
   position: absolute;
   background-color: rgb(255, 36, 102);
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
   z-index: -1;
-  top: 80%;
-  left: 5%;
+  top: 3.5%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 .contacto_items {
@@ -335,7 +341,7 @@ button[type="submit"] {
   padding: 6px 30px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 button[type="submit"]:hover {
   background-color: #34e4db;
