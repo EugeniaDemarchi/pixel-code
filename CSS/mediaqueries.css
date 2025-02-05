@@ -365,6 +365,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  /*NAVBAR*/
+  .logo {
+    width: 4.5rem;
+    height: 4rem;
+  }
   /*HOME*/
   .hero::after {
     top: 40%;
