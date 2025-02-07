@@ -43,7 +43,7 @@ let data = {
     ofrecemosFrase: "QUÉ OFRECEMOS",
     descripcionServicio:
       "  Somos dos emprendedoras apasionadas por el diseño y el desarrollo web. Combinamos nuestras habilidades en sistemas y diseño gráfico para crear soluciones digitales innovadoras yfuncionales. Nos mantenemos en constante formación para ofrecersitios web modernos y plataformas eficientes.",
-    fraseFinal: "Tu proyecto, nuestra inspiración.",
+    fraseFinal: "Tu proyecto, nuestra inspiración...",
     serviciosFrase: " NUESTROS SERVICIOS",
     sitiosWeb: " Sitios web",
     descripcionSitiosWeb:
